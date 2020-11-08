@@ -31,7 +31,7 @@ public class Main {
 				});
 			});
 
-		}, 0, 5, TimeUnit.SECONDS);
+		}, 0, 1, TimeUnit.MINUTES);
 	}
 
 	public static void thread(Runnable runnable) {
