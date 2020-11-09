@@ -3,7 +3,7 @@
 ﻿ How it works:
 
 1) ActiveMQ broker is started. Connection and session are prepared. All maps with consumers, producers and queues are initialized
-2) Each minute objects from file 'bids.json' are loaded and parsed as List<Bid> bids
+2) Each minute objects from file 'bids.json' are loaded and parsed as 'List<Bid> bids'
 3) For each item from list new thread is created, inside it queueBid(Bid bid) method called
 4) In method queueBid(Bid bid) queue and consumer/producer are created if needed or got from maps. After that message is sent from producer and consumer receives it.
 5) Bid is converted from json and is logged as <id>, <timestamp> (date format), <name> (queue name), <payload> (decoded from Base64)
